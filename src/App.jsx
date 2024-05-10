@@ -3,7 +3,7 @@ import Container from './components/Container'
 
 const App = () => {
   return (
-    <div>
+    <div className='relative'>
      <Container/>
     </div>
   )

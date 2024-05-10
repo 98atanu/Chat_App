@@ -16,7 +16,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className=' w-screen h-10 bg-[#262626] px-5 py-2 flex justify-between items-center'>
+        <div className='z-10 w-screen h-10 bg-[#262626] px-5 py-2 flex justify-between items-center absolute'>
             <div className='flex-col text-sm '>
                 <div className='font-bold'>secret <span className='bg-[#d62b5e] rounded-md px-1'>desires</span></div>
                 <div className='text-[10px] text-gray-400 -mt-1'>open beta</div>

@@ -14,7 +14,7 @@ import { FaShareAlt } from "react-icons/fa";
 
 const Sidebar = () => {
     return (
-        <div className='bg-[#d12a5c] shadow-lg shadow-[#262626] w-[40vw] h-screen pr-0.5 hidden md:block'>
+        <div className='bg-[#d12a5c] shadow-lg shadow-[#262626] w-[40vw] lg:w-[30vw] h-screen pr-0.5 hidden md:block'>
             <div className='flex items-center justify-between bg-[#262626] h-[2vw] px-1 '>
                 <div className='flex gap-1 text-xs items-center'>
                     <div className=' flex items-center'><IoIosArrowBack className='text-2xl font-bold cursor-pointer' /> Chats</div>
@@ -31,7 +31,7 @@ const Sidebar = () => {
             </div>
             <div className='relative'>
                 <img className='block' src={img} alt="img" />
-                <div className='absolute bottom-0 left-7 '>
+                <div className='absolute bottom-0 w-full px-5 pt-4  bg-gradient-to-t from-slate-950 to-transparent'>
                     <h2 className='font-bold'>Jessica Anderson</h2>
                     <h3 className='text-xs -translate-y-1'>@jessica-anderson-2</h3>
                 </div>
