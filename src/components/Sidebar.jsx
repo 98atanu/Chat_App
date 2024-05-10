@@ -31,12 +31,12 @@ const Sidebar = () => {
             </div>
             <div className='relative'>
                 <img className='block' src={img} alt="img" />
-                <div className='absolute bottom-0 w-full px-5 pt-4  bg-gradient-to-t from-slate-950 to-transparent'>
+                <div className='absolute bottom-0 w-full px-5 pt-7  bg-gradient-to-t from-[#262626] to-transparent '>
                     <h2 className='font-bold'>Jessica Anderson</h2>
                     <h3 className='text-xs -translate-y-1'>@jessica-anderson-2</h3>
                 </div>
             </div>
-            <div className='bg-[#871b3b] h-full mt-1  '>
+            <div className='bg-[#871b3b] h-full mt-1 bg-gradient-to-t from-[#262626] to-transparent  '>
                 <div className='ml-3 mr-3'>
                     <div className='flex gap-1 text-xs bg-[#262626] justify-between px-3 py-2 rounded-md mb-1'>
                         <div className='flex'>
