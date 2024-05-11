@@ -40,7 +40,6 @@ const Chat = () => {
         console.log("res", res);
         const message = res?.data?.choices?.[0]?.message?.content;
         updateMessage({ sender: "bot", message });
-        scrollElement.current.scrollIntoView();
       } catch (error) {
         console.error("An error occurred", error);
       }
@@ -48,6 +47,13 @@ const Chat = () => {
     },
     [setMessages]
   );
+
+  useEffect(() => {
+    if(scrollElement.current) {
+      scrollElement.current.scrollIntoView({behaviour: "smooth"})
+    }
+  }, [messages])
+  
 
   const handleKeyPress = (event) => {
     if (event.key === "Enter") {
@@ -63,10 +69,10 @@ const Chat = () => {
         ))}
         {loading && (
           <div className="absolute left-8  mt-1 ">
-            <SyncLoader color="#d62b5e" size={5} />
+            <SyncLoader color="#d62b5e" size={6} />
           </div>
         )}
-        <div className="h-36"></div>
+        <div className="h-32"></div>
         <div ref={scrollElement}></div>
       </div>
       <div className="absolute lg:pl-32 md:pl-6 px-3  bottom-0 left-0 right-0 flex gap-3 items-center bg-[#121212]">

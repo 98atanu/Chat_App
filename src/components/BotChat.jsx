@@ -12,7 +12,7 @@ import { ImCopy } from "react-icons/im";
 const BotChat = ( {data} ) => {
     return (
         <div>
-            <div className='flex items-center mb-2 gap-2'>
+            <div className='flex items-center mb-1 gap-2'>
                 <BiSolidBot className='text-2xl text-[#cf144ce2]' /><div className=' text-[#a4a4a1] font-bold'>Jessica</div>
             </div>
             <div className='bg-[#d62b5e] px-2 py-1 rounded-r-md rounded-b-md ml-7 text-sm'>
